@@ -1,0 +1,1139 @@
+
+==================== FINAL INTERFACE ====================
+2019-01-27 01:13:15.228537 UTC
+
+interface haskell-poker-0.1.0.0-5KB1ukRo3MnIBcRNzBCWrJ:Lib 8063
+  interface hash: 64cb279afa5cc1c4e19f4f4408b585b9
+  ABI hash: e409ff8fe431116a37cf245ec089d4b0
+  export-list hash: 7b5b9f6b3da40ba8f9386dbffc7f8123
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 304d54461d9c82d343c8527b06b0f850
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.makeDeck
+  Lib.shuffle
+module dependencies:
+package dependencies: array-0.5.3.0 base-4.12.0.0*
+                      containers-0.6.0.1 deepseq-1.4.4.0 ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0 random-1.1* time-1.8.0.2
+orphans: time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian base-4.12.0.0:GHC.Float
+         base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Complex base-4.12.0.0:Data.Functor.Compose
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity
+                         base-4.12.0.0:Data.Functor.Product base-4.12.0.0:Data.Functor.Sum
+                         base-4.12.0.0:Data.Monoid base-4.12.0.0:Data.Semigroup
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:Data.Version
+                         base-4.12.0.0:Data.Void base-4.12.0.0:GHC.Exts
+                         base-4.12.0.0:GHC.Generics base-4.12.0.0:GHC.IO.Exception
+                         containers-0.6.0.1:Data.Map.Internal
+                         containers-0.6.0.1:Data.Set.Internal
+import  -/  base-4.12.0.0:Data.Foldable 00188ddf89c975fee76bdfad479443c1
+import  -/  base-4.12.0.0:Data.Tuple c92a835d04b6c075a7031d4e28e53c71
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.Enum 51972331265459b2ecdf2bf83fce4045
+import  -/  base-4.12.0.0:GHC.Err 28d622b06927ca4c3b335ec5326c34b2
+import  -/  base-4.12.0.0:GHC.List 734a72beb76d276fb4a0ba2689a5711f
+import  -/  base-4.12.0.0:GHC.Num 847723f2584d989dac1eada133ac3fb8
+import  -/  base-4.12.0.0:GHC.Show 4e438f26d903388cc6c2c5d64ed01b98
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  containers-0.6.0.1:Data.Map 5f02dd6a8637b9a0d9efcbcf63409470
+import  -/  containers-0.6.0.1:Data.Map.Internal e652f5f18be5bf564604b214e5c1dad8
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+import  -/  random-1.1:System.Random 83162b6ba3f01e6ded75da2550e6a825
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit :: GHC.Enum.Enum Lib.Suit
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Suit
+                  Lib.$fEnumSuit_$csucc
+                  Lib.$fEnumSuit_$cpred
+                  Lib.$fEnumSuit_$ctoEnum
+                  Lib.$fEnumSuit_$cfromEnum
+                  Lib.$fEnumSuit_$cenumFrom
+                  Lib.$fEnumSuit_$cenumFromThen
+                  Lib.$fEnumSuit_$cenumFromTo
+                  Lib.$fEnumSuit_$cenumFromThenTo -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit1 :: [Lib.Suit]
+  {- Unfolding: (Lib.$fEnumSuit_go4 3#) -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit2 :: [Lib.Suit]
+  {- Unfolding: (Lib.$fEnumSuit_go4 2#) -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit3 :: [Lib.Suit]
+  {- Unfolding: (Lib.$fEnumSuit_go4 1#) -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit4 :: [Lib.Suit]
+  {- Unfolding: (Lib.$fEnumSuit_go4 0#) -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit5 :: Lib.Suit
+  {- Strictness: x -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit6 :: Lib.Suit
+  {- Strictness: x -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_$cenumFrom :: Lib.Suit -> [Lib.Suit]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Lib.Suit) ->
+                 case a of wild {
+                   Lib.Spades -> Lib.$fEnumSuit4
+                   Lib.Hearts -> Lib.$fEnumSuit3
+                   Lib.Clubs -> Lib.$fEnumSuit2
+                   Lib.Diamonds -> Lib.$fEnumSuit1 }) -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_$cenumFromThen :: Lib.Suit -> Lib.Suit -> [Lib.Suit]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_$cenumFromThenTo ::
+    Lib.Suit -> Lib.Suit -> Lib.Suit -> [Lib.Suit]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_$cenumFromTo :: Lib.Suit -> Lib.Suit -> [Lib.Suit]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Lib.Suit) (y :: Lib.Suit) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Lib.Suit]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Lib.Spades
+                       -> case GHC.Prim.># x1 0# of lwild {
+                            DEFAULT -> Lib.$fEnumSuit_go3 x1 1# -> GHC.Types.[] @ Lib.Suit }
+                       Lib.Hearts
+                       -> case GHC.Prim.># x1 1# of lwild {
+                            DEFAULT -> Lib.$fEnumSuit_go2 x1 1# -> GHC.Types.[] @ Lib.Suit }
+                       Lib.Clubs
+                       -> case GHC.Prim.># x1 2# of lwild {
+                            DEFAULT -> Lib.$fEnumSuit_go1 x1 1# -> GHC.Types.[] @ Lib.Suit }
+                       Lib.Diamonds
+                       -> case GHC.Prim.># x1 3# of lwild {
+                            DEFAULT -> Lib.$fEnumSuit_go x1 1# -> GHC.Types.[] @ Lib.Suit } }
+                 } in
+                 case x of wild {
+                   Lib.Spades -> $j 0#
+                   Lib.Hearts -> $j 1#
+                   Lib.Clubs -> $j 2#
+                   Lib.Diamonds -> $j 3# }) -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_$cfromEnum :: Lib.Suit -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Lib.Suit) ->
+                 case a of wild {
+                   Lib.Spades -> GHC.Types.I# 0#
+                   Lib.Hearts -> GHC.Types.I# 1#
+                   Lib.Clubs -> GHC.Types.I# 2#
+                   Lib.Diamonds -> GHC.Types.I# 3# }) -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_$cpred :: Lib.Suit -> Lib.Suit
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Lib.Suit) ->
+                 case a of wild {
+                   Lib.Spades -> Lib.$fEnumSuit5
+                   Lib.Hearts -> Lib.Spades
+                   Lib.Clubs -> Lib.Hearts
+                   Lib.Diamonds -> Lib.Clubs }) -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_$csucc :: Lib.Suit -> Lib.Suit
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Lib.Suit) ->
+                 case a of wild {
+                   Lib.Spades -> Lib.Hearts
+                   Lib.Hearts -> Lib.Clubs
+                   Lib.Clubs -> Lib.Diamonds
+                   Lib.Diamonds -> Lib.$fEnumSuit6 }) -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_$ctoEnum :: GHC.Types.Int -> Lib.Suit
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Lib.$w$ctoEnum ww1 }) -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_go :: GHC.Prim.Int# -> [Lib.Suit]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_go1 :: GHC.Prim.Int# -> [Lib.Suit]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_go2 :: GHC.Prim.Int# -> [Lib.Suit]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_go3 :: GHC.Prim.Int# -> [Lib.Suit]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+30295acbd40f260c95befd7acc359988
+  $fEnumSuit_go4 :: GHC.Prim.Int# -> [Lib.Suit]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fEnumValue :: GHC.Enum.Enum Lib.Value
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Value
+                  Lib.$fEnumValue_$csucc
+                  Lib.$fEnumValue_$cpred
+                  Lib.$fEnumValue_$ctoEnum
+                  Lib.$fEnumValue_$cfromEnum
+                  Lib.$fEnumValue_$cenumFrom
+                  Lib.$fEnumValue_$cenumFromThen
+                  Lib.$fEnumValue_$cenumFromTo
+                  Lib.$fEnumValue_$cenumFromThenTo -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fEnumValue1 :: Lib.Value
+  {- Strictness: x -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fEnumValue2 :: Lib.Value
+  {- Strictness: x -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fEnumValue_$cenumFrom :: Lib.Value -> [Lib.Value]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (a :: Lib.Value) ->
+                 case GHC.Prim.dataToTag# @ Lib.Value a of a# { DEFAULT ->
+                 case GHC.Prim.># a# 12# of lwild {
+                   DEFAULT -> Lib.$fEnumValue_go a#
+                   1# -> GHC.Types.[] @ Lib.Value } }) -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fEnumValue_$cenumFromThen :: Lib.Value -> Lib.Value -> [Lib.Value]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: (\ (a :: Lib.Value) (b :: Lib.Value) ->
+                 case GHC.Prim.dataToTag# @ Lib.Value a of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag# @ Lib.Value b of b# { DEFAULT ->
+                 case GHC.Prim.># a# b# of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.>=# b# a# of lwild1 {
+                        DEFAULT
+                        -> case GHC.Prim.># 12# b# of lwild2 {
+                             DEFAULT
+                             -> GHC.Types.:
+                                  @ Lib.Value
+                                  (GHC.Prim.tagToEnum# @ Lib.Value a#)
+                                  (let {
+                                     delta :: GHC.Prim.Int# = GHC.Prim.-# b# a#
+                                   } in
+                                   let {
+                                     y' :: GHC.Prim.Int# = GHC.Prim.-# 12# delta
+                                   } in
+                                   letrec {
+                                     go_dn :: GHC.Prim.Int# -> [Lib.Value]
+                                       {- Arity: 1, Strictness: <S,U> -}
+                                     = \ (x :: GHC.Prim.Int#) ->
+                                       case GHC.Prim.<# x y' of lwild3 {
+                                         DEFAULT
+                                         -> GHC.Types.:
+                                              @ Lib.Value
+                                              (GHC.Prim.tagToEnum# @ Lib.Value x)
+                                              (go_dn (GHC.Prim.+# x delta))
+                                         1#
+                                         -> GHC.Types.:
+                                              @ Lib.Value
+                                              (GHC.Prim.tagToEnum# @ Lib.Value x)
+                                              (GHC.Types.[] @ Lib.Value) }
+                                   } in
+                                   go_dn b#)
+                             1#
+                             -> case GHC.Prim.># 12# a# of lwild3 {
+                                  DEFAULT
+                                  -> GHC.Types.:
+                                       @ Lib.Value
+                                       (GHC.Prim.tagToEnum# @ Lib.Value a#)
+                                       (GHC.Types.[] @ Lib.Value)
+                                  1# -> GHC.Types.[] @ Lib.Value } }
+                        1#
+                        -> case GHC.Prim.<# 12# b# of lwild2 {
+                             DEFAULT
+                             -> GHC.Types.:
+                                  @ Lib.Value
+                                  (GHC.Prim.tagToEnum# @ Lib.Value a#)
+                                  (let {
+                                     delta :: GHC.Prim.Int# = GHC.Prim.-# b# a#
+                                   } in
+                                   let {
+                                     y' :: GHC.Prim.Int# = GHC.Prim.-# 12# delta
+                                   } in
+                                   letrec {
+                                     go_up :: GHC.Prim.Int# -> [Lib.Value]
+                                       {- Arity: 1, Strictness: <S,U> -}
+                                     = \ (x :: GHC.Prim.Int#) ->
+                                       case GHC.Prim.># x y' of lwild3 {
+                                         DEFAULT
+                                         -> GHC.Types.:
+                                              @ Lib.Value
+                                              (GHC.Prim.tagToEnum# @ Lib.Value x)
+                                              (go_up (GHC.Prim.+# x delta))
+                                         1#
+                                         -> GHC.Types.:
+                                              @ Lib.Value
+                                              (GHC.Prim.tagToEnum# @ Lib.Value x)
+                                              (GHC.Types.[] @ Lib.Value) }
+                                   } in
+                                   go_up b#)
+                             1#
+                             -> case GHC.Prim.<# 12# a# of lwild3 {
+                                  DEFAULT
+                                  -> GHC.Types.:
+                                       @ Lib.Value
+                                       (GHC.Prim.tagToEnum# @ Lib.Value a#)
+                                       (GHC.Types.[] @ Lib.Value)
+                                  1# -> GHC.Types.[] @ Lib.Value } } }
+                   1#
+                   -> case GHC.Prim.>=# b# a# of lwild1 {
+                        DEFAULT
+                        -> case GHC.Prim.># 0# b# of lwild2 {
+                             DEFAULT
+                             -> GHC.Types.:
+                                  @ Lib.Value
+                                  (GHC.Prim.tagToEnum# @ Lib.Value a#)
+                                  (let {
+                                     delta :: GHC.Prim.Int# = GHC.Prim.-# b# a#
+                                   } in
+                                   let {
+                                     y' :: GHC.Prim.Int# = GHC.Prim.-# 0# delta
+                                   } in
+                                   letrec {
+                                     go_dn :: GHC.Prim.Int# -> [Lib.Value]
+                                       {- Arity: 1, Strictness: <S,U> -}
+                                     = \ (x :: GHC.Prim.Int#) ->
+                                       case GHC.Prim.<# x y' of lwild3 {
+                                         DEFAULT
+                                         -> GHC.Types.:
+                                              @ Lib.Value
+                                              (GHC.Prim.tagToEnum# @ Lib.Value x)
+                                              (go_dn (GHC.Prim.+# x delta))
+                                         1#
+                                         -> GHC.Types.:
+                                              @ Lib.Value
+                                              (GHC.Prim.tagToEnum# @ Lib.Value x)
+                                              (GHC.Types.[] @ Lib.Value) }
+                                   } in
+                                   go_dn b#)
+                             1#
+                             -> case GHC.Prim.># 0# a# of lwild3 {
+                                  DEFAULT
+                                  -> GHC.Types.:
+                                       @ Lib.Value
+                                       (GHC.Prim.tagToEnum# @ Lib.Value a#)
+                                       (GHC.Types.[] @ Lib.Value)
+                                  1# -> GHC.Types.[] @ Lib.Value } }
+                        1#
+                        -> case GHC.Prim.<# 0# b# of lwild2 {
+                             DEFAULT
+                             -> GHC.Types.:
+                                  @ Lib.Value
+                                  (GHC.Prim.tagToEnum# @ Lib.Value a#)
+                                  (let {
+                                     delta :: GHC.Prim.Int# = GHC.Prim.-# b# a#
+                                   } in
+                                   let {
+                                     y' :: GHC.Prim.Int# = GHC.Prim.-# 0# delta
+                                   } in
+                                   letrec {
+                                     go_up :: GHC.Prim.Int# -> [Lib.Value]
+                                       {- Arity: 1, Strictness: <S,U> -}
+                                     = \ (x :: GHC.Prim.Int#) ->
+                                       case GHC.Prim.># x y' of lwild3 {
+                                         DEFAULT
+                                         -> GHC.Types.:
+                                              @ Lib.Value
+                                              (GHC.Prim.tagToEnum# @ Lib.Value x)
+                                              (go_up (GHC.Prim.+# x delta))
+                                         1#
+                                         -> GHC.Types.:
+                                              @ Lib.Value
+                                              (GHC.Prim.tagToEnum# @ Lib.Value x)
+                                              (GHC.Types.[] @ Lib.Value) }
+                                   } in
+                                   go_up b#)
+                             1#
+                             -> case GHC.Prim.<# 0# a# of lwild3 {
+                                  DEFAULT
+                                  -> GHC.Types.:
+                                       @ Lib.Value
+                                       (GHC.Prim.tagToEnum# @ Lib.Value a#)
+                                       (GHC.Types.[] @ Lib.Value)
+                                  1# -> GHC.Types.[] @ Lib.Value } } } } } }) -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fEnumValue_$cenumFromThenTo ::
+    Lib.Value -> Lib.Value -> Lib.Value -> [Lib.Value]
+  {- Arity: 3, Strictness: <S,U><S,U><S,U> -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fEnumValue_$cenumFromTo :: Lib.Value -> Lib.Value -> [Lib.Value]
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: (\ (x :: Lib.Value) (y :: Lib.Value) ->
+                 case GHC.Prim.dataToTag# @ Lib.Value x of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag# @ Lib.Value y of a#1 { DEFAULT ->
+                 case GHC.Prim.># a# a#1 of lwild {
+                   DEFAULT
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [Lib.Value]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x1 :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ Lib.Value
+                            (case GHC.Prim.>=# x1 0# of lwild1 {
+                               DEFAULT -> Lib.$wlvl1 x1
+                               1#
+                               -> case GHC.Prim.<=# x1 12# of lwild2 {
+                                    DEFAULT -> Lib.$wlvl1 x1
+                                    1# -> GHC.Prim.tagToEnum# @ Lib.Value x1 } })
+                            (case GHC.Prim.==# x1 a#1 of lwild1 {
+                               DEFAULT -> go (GHC.Prim.+# x1 1#) 1# -> GHC.Types.[] @ Lib.Value })
+                      } in
+                      go a#
+                   1# -> GHC.Types.[] @ Lib.Value } } }) -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fEnumValue_$cfromEnum :: Lib.Value -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Lib.Value) ->
+                 case GHC.Prim.dataToTag# @ Lib.Value a of a# { DEFAULT ->
+                 GHC.Types.I# a# }) -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fEnumValue_$cpred :: Lib.Value -> Lib.Value
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Lib.Value) ->
+                 case a of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.dataToTag# @ Lib.Value lwild of a# { DEFAULT ->
+                      GHC.Prim.tagToEnum# @ Lib.Value (GHC.Prim.+# a# -1#) }
+                   Lib.Two -> Lib.$fEnumValue1 }) -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fEnumValue_$csucc :: Lib.Value -> Lib.Value
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Lib.Value) ->
+                 case a of lwild {
+                   DEFAULT
+                   -> case GHC.Prim.dataToTag# @ Lib.Value lwild of a# { DEFAULT ->
+                      GHC.Prim.tagToEnum# @ Lib.Value (GHC.Prim.+# a# 1#) }
+                   Lib.A -> Lib.$fEnumValue2 }) -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fEnumValue_$ctoEnum :: GHC.Types.Int -> Lib.Value
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Lib.$w$ctoEnum1 ww1 }) -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fEnumValue_go :: GHC.Prim.Int# -> [Lib.Value]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+30295acbd40f260c95befd7acc359988
+  $fShowSuit :: GHC.Show.Show Lib.Suit
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Suit
+                  Lib.$fShowSuit_$cshowsPrec
+                  Lib.$fShowSuit_$cshow
+                  Lib.$fShowSuit_$cshowList -}
+9342d1c47691c2c61fa9c5938265539e
+  $fShowSuit1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCStringUtf8# Lib.$fShowSuit2) -}
+72e27eddce116094bf8139f6f2f3132e
+  $fShowSuit2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\\226\\153\\167"#) -}
+97f1b97191e28112414160cf6d20f414
+  $fShowSuit3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCStringUtf8# Lib.$fShowSuit4) -}
+7c23d3a081b1d6f11a0f0b0560e61c4a
+  $fShowSuit4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\\226\\153\\162"#) -}
+21c33aa9ee523d98d3b96f01d467513c
+  $fShowSuit5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCStringUtf8# Lib.$fShowSuit6) -}
+2e57467418f1d598aa3336e6b3203162
+  $fShowSuit6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\\226\\153\\161"#) -}
+bf209ace170295b5276c0257753db29f
+  $fShowSuit7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCStringUtf8# Lib.$fShowSuit8) -}
+5c02e819815d48f40cfab8f1c194d357
+  $fShowSuit8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\\226\\153\\164"#) -}
+30295acbd40f260c95befd7acc359988
+  $fShowSuit_$cshow :: Lib.Suit -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Lib.Suit) ->
+                 case ds of wild {
+                   Lib.Spades -> Lib.$fShowSuit7
+                   Lib.Hearts -> Lib.$fShowSuit5
+                   Lib.Clubs -> Lib.$fShowSuit3
+                   Lib.Diamonds -> Lib.$fShowSuit1 }) -}
+30295acbd40f260c95befd7acc359988
+  $fShowSuit_$cshowList :: [Lib.Suit] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Lib.Suit]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Lib.Suit Lib.$w$cshowsPrec ls s) -}
+30295acbd40f260c95befd7acc359988
+  $fShowSuit_$cshowsPrec ::
+    GHC.Types.Int -> Lib.Suit -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int) (w1 :: Lib.Suit) (w2 :: GHC.Base.String) ->
+                 Lib.$w$cshowsPrec w1 w2) -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fShowValue :: GHC.Show.Show Lib.Value
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Lib.Value
+                  Lib.$fShowValue_$cshowsPrec
+                  Lib.$fShowValue_$cshow
+                  Lib.$fShowValue_$cshowList -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fShowValue1 :: Lib.Value -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Lib.Value) (s :: GHC.Base.String)[OneShot] ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n (Lib.$fShowValue_$cshow x))
+                   s) -}
+15acb0622a81c4e93739119d36443467
+  $fShowValue10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue11) -}
+b02557577cfff0a47f0c5fac76fa4540
+  $fShowValue11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("10"#) -}
+c6721a100c44a5ee0fc4468c2c6b8b16
+  $fShowValue12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue13) -}
+69e928a11ec6de4ba878df3a09607f82
+  $fShowValue13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("9"#) -}
+f3225c051794d2adeb3998485d861177
+  $fShowValue14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue15) -}
+6084a75c7d433a0a9eeb7c6110ea7c4a
+  $fShowValue15 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("8"#) -}
+d64f5c7461da5e1e1faeb2e181e896c5
+  $fShowValue16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue17) -}
+7a675cbf46137000b11d7594b45d99ad
+  $fShowValue17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("7"#) -}
+034854098ea7b37ac1be7a71c6501c69
+  $fShowValue18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue19) -}
+f163161e78e1ae7a5e755a2fa34f8583
+  $fShowValue19 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("6"#) -}
+8b0a7d0e6230ec9052ad73a2c3356fc5
+  $fShowValue2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue3) -}
+3df99cced8c0775e245b4231aaa4c2fa
+  $fShowValue20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue21) -}
+80d938d115e41610c8e4ba0184c62930
+  $fShowValue21 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("5"#) -}
+6e117bc8f627b87aeeb802c3dbee853b
+  $fShowValue22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue23) -}
+44e454ebde0c74159b2873b7b5e7056c
+  $fShowValue23 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("4"#) -}
+1764b547b4ad5273e8f96ce8085629f6
+  $fShowValue24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue25) -}
+9e00ada2570efa267ab8bdfbe1a4fc87
+  $fShowValue25 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("3"#) -}
+579cebe653d4ed5eadb91acd25699151
+  $fShowValue26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue27) -}
+68a04614133f3c02a5a8e88334ba3241
+  $fShowValue27 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("2"#) -}
+bcaf6ebcd90d1437f302ee07a9d33026
+  $fShowValue3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("A"#) -}
+e73b26af7b48a7524c139676b80dba99
+  $fShowValue4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue5) -}
+3c9b6e276c624fde29d02ddc484d5505
+  $fShowValue5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("K"#) -}
+f85632cc1caa8c7652a3ad1a14e63f0a
+  $fShowValue6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue7) -}
+1ba9dfddcba17bdc32f5a53a03fb4db3
+  $fShowValue7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Q"#) -}
+d1fe79cfc3fbd889aa6da9a8855e62d7
+  $fShowValue8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Lib.$fShowValue9) -}
+6d9ab961dc42ac88eb22c49d954219e8
+  $fShowValue9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("J"#) -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fShowValue_$cshow :: Lib.Value -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Lib.Value) ->
+                 case ds of wild {
+                   Lib.Two -> Lib.$fShowValue26
+                   Lib.Three -> Lib.$fShowValue24
+                   Lib.Four -> Lib.$fShowValue22
+                   Lib.Five -> Lib.$fShowValue20
+                   Lib.Six -> Lib.$fShowValue18
+                   Lib.Seven -> Lib.$fShowValue16
+                   Lib.Eight -> Lib.$fShowValue14
+                   Lib.Nine -> Lib.$fShowValue12
+                   Lib.Ten -> Lib.$fShowValue10
+                   Lib.J -> Lib.$fShowValue8
+                   Lib.Q -> Lib.$fShowValue6
+                   Lib.K -> Lib.$fShowValue4
+                   Lib.A -> Lib.$fShowValue2 }) -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fShowValue_$cshowList :: [Lib.Value] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Lib.Value]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__ @ Lib.Value Lib.$fShowValue1 ls s) -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $fShowValue_$cshowsPrec ::
+    GHC.Types.Int -> Lib.Value -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int) (x :: Lib.Value) (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c n (Lib.$fShowValue_$cshow x))
+                   s) -}
+a7aa7136cc432981745c8226b850b693
+  $tc'A :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3392387576809323636##
+                   2605487516112494174##
+                   Lib.$trModule
+                   Lib.$tc'A2
+                   0#
+                   Lib.$tc'A1) -}
+e39bb53e5212c5eacef07016d7c0e2ba
+  $tc'A1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+38aa7a9162de8326c870aa127b12e2ed
+  $tc'A2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'A3) -}
+e665665e9bd23800bad2a3052d17186a
+  $tc'A3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'A"#) -}
+b0ab866345aea3dc6c8e9ebcfea20c87
+  $tc'Clubs :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9703514737151937368##
+                   17991401875249202781##
+                   Lib.$trModule
+                   Lib.$tc'Clubs2
+                   0#
+                   Lib.$tc'Clubs1) -}
+421fd4699953a256e349e1b566ca72f9
+  $tc'Clubs1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+e9f5d46ec2c417991df4cc7bb9c7be7e
+  $tc'Clubs2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Clubs3) -}
+072d8ae24e139745ab50a6bcdab9dcbc
+  $tc'Clubs3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Clubs"#) -}
+dc40f10b69d0b8f668e16981d1483cc5
+  $tc'Diamonds :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15805940784135059824##
+                   11707320042138394010##
+                   Lib.$trModule
+                   Lib.$tc'Diamonds1
+                   0#
+                   Lib.$tc'Clubs1) -}
+98dd534c98416d22d6a809a72e061f97
+  $tc'Diamonds1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Diamonds2) -}
+824756b4fca824acbe1ad6d59c49a7e2
+  $tc'Diamonds2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Diamonds"#) -}
+318b23630944f32fb224d694e3317cfa
+  $tc'Eight :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3648904328983295044##
+                   10893311264222991838##
+                   Lib.$trModule
+                   Lib.$tc'Eight1
+                   0#
+                   Lib.$tc'A1) -}
+4f6f7d596627c4cbd89805a131c278f5
+  $tc'Eight1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Eight2) -}
+507eecadd447aad578d10346c37df858
+  $tc'Eight2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Eight"#) -}
+12beba26cef5ea056a9eb171cc73b459
+  $tc'Five :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12002360731281517043##
+                   9054764525286172877##
+                   Lib.$trModule
+                   Lib.$tc'Five1
+                   0#
+                   Lib.$tc'A1) -}
+18ffa33aa7b7319de4640dfb0fa5a584
+  $tc'Five1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Five2) -}
+1d545d6f85f8a01ba79b26305ff7d615
+  $tc'Five2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Five"#) -}
+48a18dc8e42198b99fbf7261f7b999ee
+  $tc'Four :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1084078249764544702##
+                   17627499356077110401##
+                   Lib.$trModule
+                   Lib.$tc'Four1
+                   0#
+                   Lib.$tc'A1) -}
+fde3247337f1d541908d9203d37f5211
+  $tc'Four1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Four2) -}
+57adaa713a4ecfeffccb6ceaacb6180c
+  $tc'Four2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Four"#) -}
+858ebff7535c7917b7e746e70f52b1bb
+  $tc'Hearts :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15816287153417902238##
+                   11097529977159049569##
+                   Lib.$trModule
+                   Lib.$tc'Hearts1
+                   0#
+                   Lib.$tc'Clubs1) -}
+6facee1af6747ad350a427646d896858
+  $tc'Hearts1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Hearts2) -}
+93429024de5039685cc724f9ddf9e75c
+  $tc'Hearts2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Hearts"#) -}
+a9bdbfd6369e59d1a3e51c4c0b0d16ff
+  $tc'J :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6495384240795709417##
+                   1100775456349172579##
+                   Lib.$trModule
+                   Lib.$tc'J1
+                   0#
+                   Lib.$tc'A1) -}
+4282cc6a21bcf99e446c9f86830ee00a
+  $tc'J1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'J2) -}
+1b751d09fb4d9b708f6dbd261a3e6390
+  $tc'J2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'J"#) -}
+d79364ef5d2b03fad162e34df9d27f73
+  $tc'K :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8734646547326277028##
+                   17515894126808708076##
+                   Lib.$trModule
+                   Lib.$tc'K1
+                   0#
+                   Lib.$tc'A1) -}
+7afd3be5f2f59c512bce8deff0fe88e4
+  $tc'K1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'K2) -}
+9e150a6328febb1627b17e1157d93fe1
+  $tc'K2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'K"#) -}
+d058000bd9c8a6686cfe5ea0c643128c
+  $tc'Nine :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17816447582392700848##
+                   2266952043828084573##
+                   Lib.$trModule
+                   Lib.$tc'Nine1
+                   0#
+                   Lib.$tc'A1) -}
+92de27ca1998cb7ef82419dc089074a2
+  $tc'Nine1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Nine2) -}
+9d666ad43c11ccbe5c877964f17197fb
+  $tc'Nine2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Nine"#) -}
+2024073c31c716a7a33eb84a786c89ab
+  $tc'Q :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14105071751777847998##
+                   11570309163527515099##
+                   Lib.$trModule
+                   Lib.$tc'Q1
+                   0#
+                   Lib.$tc'A1) -}
+15d623381709c4402111059370349d70
+  $tc'Q1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Q2) -}
+e0e86e59516218580a9830d8922d8038
+  $tc'Q2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Q"#) -}
+83a151eabbd849315747fe9198ed7ee7
+  $tc'Seven :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10471287129664991743##
+                   7872150886643983766##
+                   Lib.$trModule
+                   Lib.$tc'Seven1
+                   0#
+                   Lib.$tc'A1) -}
+48b4b6a6802443583c4978ac5702d196
+  $tc'Seven1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Seven2) -}
+1b2ee6318dba2bd899e1dedeb4aa2b37
+  $tc'Seven2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Seven"#) -}
+0d8412d22d610291db9483dfeceb2375
+  $tc'Six :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15560470467194267953##
+                   6791710039004598485##
+                   Lib.$trModule
+                   Lib.$tc'Six1
+                   0#
+                   Lib.$tc'A1) -}
+a8de68cb809242ff11849844c0a5d3ea
+  $tc'Six1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Six2) -}
+4ceba85477c6ac50256565e283c2723c
+  $tc'Six2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Six"#) -}
+0e573831ee411d6fa8a6d6ffa8de9359
+  $tc'Spades :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12412651028819924857##
+                   15841536372988792899##
+                   Lib.$trModule
+                   Lib.$tc'Spades1
+                   0#
+                   Lib.$tc'Clubs1) -}
+a248f3f443f84640a4e02a710f999b9a
+  $tc'Spades1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Spades2) -}
+b2732051abab52a11c8e530e304ddff3
+  $tc'Spades2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Spades"#) -}
+5a7e3d8131b228feccaceb3c0b06f2a4
+  $tc'Ten :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14941939408904381569##
+                   1437907711141585571##
+                   Lib.$trModule
+                   Lib.$tc'Ten1
+                   0#
+                   Lib.$tc'A1) -}
+6c3d89d3ca3ae48cef3f7e006425c884
+  $tc'Ten1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Ten2) -}
+060119741ebf5b4c3e8eb9be397630a1
+  $tc'Ten2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Ten"#) -}
+6e3bfdba217cd9996e75241e5d0bd26b
+  $tc'Three :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8866007460640699854##
+                   119334953057573275##
+                   Lib.$trModule
+                   Lib.$tc'Three1
+                   0#
+                   Lib.$tc'A1) -}
+04e75cbd1eb1bf0ac6b55d9c7d5969da
+  $tc'Three1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Three2) -}
+3d5054075bd58521f4aeeaa2b43e0dfd
+  $tc'Three2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Three"#) -}
+daf2501d031668c26c2a3d13f8f8e2f6
+  $tc'Two :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8813433364211427127##
+                   3755748074153255098##
+                   Lib.$trModule
+                   Lib.$tc'Two1
+                   0#
+                   Lib.$tc'A1) -}
+6b61744cddd4ab2bb40858f977ff9e6a
+  $tc'Two1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tc'Two2) -}
+6f1436b4c65448338dac707b581583f6
+  $tc'Two2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Two"#) -}
+c315479bc7ea6d6979c3038a5d820264
+  $tcSuit :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3517772275067810235##
+                   7863567354450827532##
+                   Lib.$trModule
+                   Lib.$tcSuit1
+                   0#
+                   GHC.Types.krep$*) -}
+d5a0b01766d78726c1d6942679297328
+  $tcSuit1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tcSuit2) -}
+f18aee1578ce6e32619bd3f81d03cc65
+  $tcSuit2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Suit"#) -}
+c17ef40e3ee735e1a1e838b6c4320eed
+  $tcValue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2780340728222358407##
+                   998859617155241044##
+                   Lib.$trModule
+                   Lib.$tcValue1
+                   0#
+                   GHC.Types.krep$*) -}
+e0ef88d3148be3bc4a1dfb927af3002c
+  $tcValue1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$tcValue2) -}
+dd72a2edcacfa4f3145776f7f594938e
+  $tcValue2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Value"#) -}
+a053f46b861548a2f43073cf70c7af18
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule3 Lib.$trModule1) -}
+d07468fb7a2fd6dabee3eb0f4c90c826
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$trModule2) -}
+56b3861d9fcc44b861b3f053eb62d691
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Lib"#) -}
+9c23d2b358430af4bbbe1dbcce928128
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Lib.$trModule4) -}
+8f1f01ae6666cf7f00ae42a6cf8469c4
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("haskell-poker-0.1.0.0-5KB1ukRo3MnIBcRNzBCWrJ"#) -}
+30295acbd40f260c95befd7acc359988
+  $w$cshowsPrec :: Lib.Suit -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (w :: Lib.Suit) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Lib.Spades -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowSuit7 w1
+                   Lib.Hearts -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowSuit5 w1
+                   Lib.Clubs -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowSuit3 w1
+                   Lib.Diamonds
+                   -> GHC.Base.++ @ GHC.Types.Char Lib.$fShowSuit1 w1 }) -}
+30295acbd40f260c95befd7acc359988
+  $w$ctoEnum :: GHC.Prim.Int# -> Lib.Suit
+  {- Arity: 1, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> Lib.$wlvl ww
+                   1#
+                   -> case GHC.Prim.<=# ww 3# of lwild1 {
+                        DEFAULT -> Lib.$wlvl ww
+                        1# -> GHC.Prim.tagToEnum# @ Lib.Suit ww } }) -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $w$ctoEnum1 :: GHC.Prim.Int# -> Lib.Value
+  {- Arity: 1, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.>=# ww 0# of lwild {
+                   DEFAULT -> Lib.$wlvl1 ww
+                   1#
+                   -> case GHC.Prim.<=# ww 12# of lwild1 {
+                        DEFAULT -> Lib.$wlvl1 ww
+                        1# -> GHC.Prim.tagToEnum# @ Lib.Value ww } }) -}
+2b2bb6ae29c49343531a9d174a7ebf20
+  $w$sgo13 ::
+    GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> a1
+    -> Data.Map.Internal.Map GHC.Types.Int a1
+    -> Data.Map.Internal.Map GHC.Types.Int a1
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [2] -}
+30295acbd40f260c95befd7acc359988
+  $wlvl :: GHC.Prim.Int# -> Lib.Suit
+  {- Arity: 1, Strictness: <B,U>x, Inline: [2] -}
+3a4fd18ecee81f4d20e857bbd9293b4d
+  $wlvl1 :: GHC.Prim.Int# -> Lib.Value
+  {- Arity: 1, Strictness: <B,U>x, Inline: [2] -}
+a98f255320ae59df4c4e5ab0dde41971
+  $wpoly_go13 ::
+    GHC.Prim.Int# -> Data.Map.Internal.Map GHC.Types.Int a -> a
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [2] -}
+9e4a0736cf3b279170923600537f2d3f
+  type Card = (Lib.Value, Lib.Suit)
+54adc22d2f7b0adae52b7b93a340341a
+  type Deck = [Lib.Card]
+f2193772b0242e958d6a3010d985a9be
+  type Hand = [Lib.Card]
+30295acbd40f260c95befd7acc359988
+  data Suit = Spades | Hearts | Clubs | Diamonds
+3a4fd18ecee81f4d20e857bbd9293b4d
+  data Value
+    = Two
+    | Three
+    | Four
+    | Five
+    | Six
+    | Seven
+    | Eight
+    | Nine
+    | Ten
+    | J
+    | Q
+    | K
+    | A
+58a69f9f4ae88cb123b8ee79d430cdb3
+  makeDeck :: Lib.Deck
+  {- Unfolding: (Lib.makeDeck_go 0#) -}
+f45d6b9bc28524f86b8a37d614b4f0ca
+  makeDeck_go :: GHC.Prim.Int# -> [Lib.Card]
+  {- Arity: 1, Strictness: <L,U> -}
+f56a272ec91d11049c1495a5fae5b9ee
+  shuffle :: System.Random.RandomGen g => g -> Lib.Deck -> Lib.Deck
+  {- Arity: 3,
+     Strictness: <L,U(C(U(1*U(U),U)),C(U(U(U),1*U(U))),A)><L,U><S,1*U>,
+     Unfolding: (\ @ g
+                   ($dRandomGen :: System.Random.RandomGen g)
+                   (gen :: g)
+                   (deck :: Lib.Deck) ->
+                 case deck of wild {
+                   [] -> GHC.Types.[] @ Lib.Card
+                   : ipv ipv1
+                   -> letrec {
+                        $wgo :: GHC.Prim.Int#
+                                -> [(Lib.Value, Lib.Suit)]
+                                -> Data.Map.Internal.Map GHC.Types.Int Lib.Card
+                                -> g
+                                -> Lib.Deck
+                          <join 4> {- Arity: 4, Strictness: <L,U><S,1*U><S,U><L,U>,
+                                      Inline: [2] -}
+                        = \ (w :: GHC.Prim.Int#)
+                            (w1 :: [(Lib.Value, Lib.Suit)])
+                            (ww :: Data.Map.Internal.Map GHC.Types.Int Lib.Card)
+                            (ww1 :: g) ->
+                          case w1 of wild1 {
+                            []
+                            -> Data.Map.Internal.elems_go
+                                 @ GHC.Types.Int
+                                 @ (Lib.Value, Lib.Suit)
+                                 (GHC.Types.[] @ (Lib.Value, Lib.Suit))
+                                 ww
+                            : y ys
+                            -> case System.Random.$wrandomIvalInteger
+                                      @ g
+                                      @ GHC.Types.Int
+                                      $dRandomGen
+                                      GHC.Num.$fNumInt
+                                      Lib.shuffle2
+                                      (GHC.Integer.Type.smallInteger w)
+                                      ww1 of ww2 { (#,#) ww3 ww4 ->
+                               case ww3 of ww5 { GHC.Types.I# ww6 ->
+                               let {
+                                 ww7 :: Data.Map.Internal.Map GHC.Types.Int Lib.Card
+                                 = Lib.$w$sgo13
+                                     @ (Lib.Value, Lib.Suit)
+                                     ww5
+                                     ww6
+                                     y
+                                     (Lib.$w$sgo13
+                                        @ (Lib.Value, Lib.Suit)
+                                        (GHC.Types.I# w)
+                                        w
+                                        (Lib.$wpoly_go13 @ (Lib.Value, Lib.Suit) ww6 ww)
+                                        ww)
+                               } in
+                               case w of wild2 {
+                                 DEFAULT -> $wgo (GHC.Prim.+# wild2 1#) ys ww7 ww4
+                                 9223372036854775807#
+                                 -> Data.Map.Internal.elems_go
+                                      @ GHC.Types.Int
+                                      @ (Lib.Value, Lib.Suit)
+                                      (GHC.Types.[] @ (Lib.Value, Lib.Suit))
+                                      ww7 } } } }
+                      } in
+                      $wgo
+                        1#
+                        ipv1
+                        (Data.Map.Internal.Bin
+                           @ GHC.Types.Int
+                           @ Lib.Card
+                           1#
+                           Lib.shuffle1
+                           ipv
+                           (Data.Map.Internal.Tip @ GHC.Types.Int @ Lib.Card)
+                           (Data.Map.Internal.Tip @ GHC.Types.Int @ Lib.Card))
+                        gen }) -}
+7b3f8430e7dffc2539edd120fb4e88e4
+  shuffle1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+fee7c69cc30aa479133790ea1cc5c891
+  shuffle2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+instance [safe] GHC.Enum.Enum [Lib.Suit] = Lib.$fEnumSuit
+instance [safe] GHC.Enum.Enum [Lib.Value] = Lib.$fEnumValue
+instance [safe] GHC.Show.Show [Lib.Suit] = Lib.$fShowSuit
+instance [safe] GHC.Show.Show [Lib.Value] = Lib.$fShowValue
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
